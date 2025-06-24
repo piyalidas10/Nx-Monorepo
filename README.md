@@ -1,4 +1,4 @@
-# Nx-Monorepo
+# Nx-Monorepo [https://nx.dev/getting-started/tutorials/angular-monorepo-tutorial]
 Build system, optimized for monorepos, with plugins for popular frameworks and tools and advanced CI capabilities including caching and distribution.
 
 Monorepo is an architectural solution to this problem that is used by some of the largest tech companies in the world, such as Google and Facebook, as well as being used by some of the most popular open source libraries such as Babel, React Jest and countless more.
