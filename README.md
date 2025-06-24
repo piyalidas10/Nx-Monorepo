@@ -1,7 +1,8 @@
-# Nx-Monorepo [https://nx.dev/getting-started/tutorials/angular-monorepo-tutorial]
+# Nx-Monorepo 
+[Nx-Monorepo](https://nx.dev/getting-started/tutorials/angular-monorepo-tutorial)
 Build system, optimized for monorepos, with plugins for popular frameworks and tools and advanced CI capabilities including caching and distribution.
 
-Monorepo is an architectural solution to this problem that is used by some of the largest tech companies in the world, such as Google and Facebook, as well as being used by some of the most popular open source libraries such as Babel, React Jest and countless more.
+> Monorepo is an architectural solution to this problem that is used by some of the largest tech companies in the world, such as Google and Facebook, as well as being used by some of the most popular open source libraries such as Babel, React Jest and countless more.
 
 ## What is a Monorepo?
 A monorepo or a mono repository is a single repository that stores all of the code and assets for all of your projects, rather than each product or library being stored in its own source control. This allows you to develop, test and deploy all of your projects and their dependencies simultaneously with everything using the latest iteration of everything else.
@@ -9,3 +10,5 @@ For example, imagine that you're developing a product and you have built a small
 sets of tools to manage it all. But most open source projects would almost certainly never have to worry about that. And there is a selection of amazing free tools and libraries out there for helping to manage everything.
 
 When working in a monorepo One of the great features is that you can import and use your own libraries just like you would any other NPM package.
+
+## Nx Monorepo Steup
