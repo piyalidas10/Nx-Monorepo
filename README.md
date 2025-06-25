@@ -11,6 +11,10 @@ sets of tools to manage it all. But most open source projects would almost certa
 
 When working in a monorepo One of the great features is that you can import and use your own libraries just like you would any other NPM package.
 
+## Advantages of Nx Monorepo
+   - Default Nx follows the single version policy meaning that all of the packages are just installed and referenced at the root level and then all of the other applications and libraries withing the workspace point to those references. For long run, it gives a lot of benifits because you never run into issues where you have two different libraies you want to share & reuse in one application but both of them use or require different angular versions.
+   - You don't necessarily need to go to full route. You can also have a setup where every appliction every library have their own package.json & node_modules. You would use something like npm, yarn, pnpm workspaces to actually make sure that the linking amoung those libraies happens such that you actually gets some benefits from a monorepo setup.
+
 ## Nx Monorepo Steup
 ```
 ~❯ npx create-nx-workspace@latest angular-monorepo --preset=angular-monorepo
@@ -74,4 +78,12 @@ NX   Let's create a new workspace [https://nx.dev/getting-started/intro]
    ├─ package-lock.json
    └─ package.json
 ```
+One way to structure an Nx monorepo is to place application projects in the apps folder and library projects in the libs folder. Applications are encouraged to be as light-weight as possible so that more code is pushed into libraries and can be reused in other projects. This folder structure is just a suggestion and can be modified to suit your organization's needs.
+The nx.json file contains configuration settings for Nx itself and global default settings that individual projects inherit. 
+
+## @nx/angular
+[@nx/angular intro](https://nx.dev/technologies/angular/introduction)
+
+## Migrating an Angular CLI project to Nx
+[Nx migration from Angular Cli](https://nx.dev/technologies/angular/migration/angular)
 
