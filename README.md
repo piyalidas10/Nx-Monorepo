@@ -12,8 +12,11 @@ sets of tools to manage it all. But most open source projects would almost certa
 When working in a monorepo One of the great features is that you can import and use your own libraries just like you would any other NPM package.
 
 ## Advantages of Nx Monorepo
-   - Default Nx follows the single version policy meaning that all of the packages are just installed and referenced at the root level and then all of the other applications and libraries withing the workspace point to those references. For long run, it gives a lot of benifits because you never run into issues where you have two different libraies you want to share & reuse in one application but both of them use or require different angular versions.
-   - You don't necessarily need to go to full route. You can also have a setup where every appliction every library have their own package.json & node_modules. You would use something like npm, yarn, pnpm workspaces to actually make sure that the linking amoung those libraies happens such that you actually gets some benefits from a monorepo setup.
+   ✔ Default Nx follows the single version policy meaning that all of the packages are just installed and referenced at the root level and then all of the other applications and libraries withing the workspace point to those references. For long run, it gives a lot of benifits because you never run into issues where you have two different libraies you want to share & reuse in one application but both of them use or require different angular versions.
+  ✔ You don't necessarily need to go to full route. You can also have a setup where every appliction every library have their own package.json & node_modules. You would use something like npm, yarn, pnpm workspaces to actually make sure that the linking amoung those libraies happens such that you actually gets some benefits from a monorepo setup.
+  ✔ Nx has a built-in caching system [Nx Cache](https://nx.dev/features/cache-task-results) that speeds up the execution time of many common tasks by reusing previous results and only building, testing, or linting code affected by recent changes. By default, Nx caches task results locally. If you are running a task that was previously executed, Nx restores the results of running that task from the cache instead of executing it again. However, as Nx states: The biggest benefit of caching comes from using remote caching in CI, where you can share the cache between different runs.
+  ✔ 
+  ✔ 
 
 ## Nx Monorepo Steup
 ```
@@ -35,7 +38,24 @@ NX   Let's create a new workspace [https://nx.dev/getting-started/intro]
 
 ```
 └─ angular-monorepo
-   ├─ ...
+   ├─ .github
+   │  ├─ workflows
+   │  │  ├─ ci.yml
+   ├─ .nx
+   │  ├─ cache
+   │  │  ├─ ci.yml
+   │  │  ├─ cloud
+   │  ├─ workspace-data
+   │  │  ├─ eslint-2654242865465226088.hash
+   │  │  ├─ file-map.json
+   │  │  ├─ lockfile.hash
+   │  │  ├─ nx_files.nxt
+   │  │  ├─ parsed-lock-file.json
+   │  │  ├─ playwright-5186013267177752385.hash
+   │  │  ├─ eslint-2654242865465226088.hash
+   │  │  ├─ project-graph.json
+   │  │  ├─ project-graph.lock
+   │  │  ├─ source-maps.json
    ├─ apps
    │  ├─ angular-monorepo
    │  │  ├─ public
