@@ -12,3 +12,66 @@ sets of tools to manage it all. But most open source projects would almost certa
 When working in a monorepo One of the great features is that you can import and use your own libraries just like you would any other NPM package.
 
 ## Nx Monorepo Steup
+```
+~❯ npx create-nx-workspace@latest angular-monorepo --preset=angular-monorepo
+
+NX   Let's create a new workspace [https://nx.dev/getting-started/intro]
+
+✔ Application name · angular-monorepo
+✔ Which bundler would you like to use? · esbuild
+✔ Default stylesheet format · scss
+✔ Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? · No
+✔ Which unit test runner would you like to use? · jest
+✔ Test runner to use for end to end (E2E) tests · playwright
+✔ Which CI provider would you like to use? · github
+```
+
+[Setup 1](https://github.com/piyalidas10/Nx-Monorepo/blob/bbb3423ddbd1adaeae2ecddcf5a467805e734223/basic_examples/images/Nx_Monorepo_Setup_1.png)
+[Setup 2](https://github.com/piyalidas10/Nx-Monorepo/blob/bbb3423ddbd1adaeae2ecddcf5a467805e734223/basic_examples/images/Nx_Monorepo_Setup_2.png)
+
+```
+└─ angular-monorepo
+   ├─ ...
+   ├─ apps
+   │  ├─ angular-monorepo
+   │  │  ├─ public
+   │  │  │  ├─ favicon.ico
+   │  │  ├─ src
+   │  │  │  ├─ app
+   │  │  │  │  ├─ app.scss
+   │  │  │  │  ├─ app.html
+   │  │  │  │  ├─ app.spec.ts
+   │  │  │  │  ├─ app.ts
+   │  │  │  │  ├─ app.config.ts
+   │  │  │  │  ├─ app.routes.ts
+   │  │  │  │  └─ nx-welcome.ts
+   │  │  │  ├─ assets
+   │  │  │  ├─ index.html
+   │  │  │  ├─ main.ts
+   │  │  │  ├─ styles.scss
+   │  │  │  └─ test-setup.ts
+   │  │  ├─ eslint.config.mjs
+   │  │  ├─ jest.config.ts
+   │  │  ├─ project.json
+   │  │  ├─ tsconfig.app.json
+   │  │  ├─ tsconfig.json
+   │  │  └─ tsconfig.spec.json
+   │  ├─ angular-monorepo-e2e
+   │  │  ├─ src
+   │  │  │  ├─example.spec.ts
+   │  │  ├─ eslint.config.mjs
+   │  │  ├─ playwright.config.ts
+   │  │  ├─ project.json
+   │  │  └─ tsconfig.json
+   ├─ nx.json
+   ├─ tsconfig.base.json
+   ├─ node_modules
+   ├─ .prettierrc
+   ├─ eslint.config.mjs
+   ├─ jest.config.ts
+   ├─ jest.preset.js
+   ├─ README.md
+   ├─ package-lock.json
+   └─ package.json
+```
+
