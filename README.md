@@ -1,5 +1,6 @@
 # Nx-Monorepo 
-[Nx-Monorepo](https://nx.dev/getting-started/tutorials/angular-monorepo-tutorial)
+[Nx-Monorepo](https://nx.dev/getting-started/tutorials/angular-monorepo-tutorial) 
+
 Build system, optimized for monorepos, with plugins for popular frameworks and tools and advanced CI capabilities including caching and distribution.
 
 > Monorepo is an architectural solution to this problem that is used by some of the largest tech companies in the world, such as Google and Facebook, as well as being used by some of the most popular open source libraries such as Babel, React Jest and countless more.
@@ -136,5 +137,14 @@ Rebuilding and retesting the same code repeatedly is costly. Nx offers a sophist
 Nx restores both the terminal output and the files created from running the task (e.g., your build or dist directory).
 [Use Remote Caching (Nx Replay)](https://nx.dev/ci/features/remote-cache)
 [How Nx Cache works](https://nx.dev/concepts/how-caching-works)
+
+## Why use Yarn over Npm for monorepo project
+   - yarn shines in larger projects or complex monorepos where speed, deterministic installs, and robust offline support are crucial. Yarn's parallel installation, enhanced security features, and advanced workspace management make it the better choice for teams working on large-scale projects.
+   - While npm installs package dependencies sequentially, which slows down package installation, yarn installs them in parallel, speeding up the process. Yarn also provides more comprehensive and readable output logs that help developers understand package dependencies, whereas npm output logs can be hard to read.
+   - Yarn’s parallel installation is often 2-3 times faster than npm, making it highly efficient for projects with many dependencies.
+   - Yarn’s flat folder structure prevents issues with deep nesting and minimizes the risk of dependency conflicts.
+   - Yarn stores a more comprehensive cache, ensuring that all necessary files are available when offline. npm’s offline capabilities aren’t as comprehensive as Yarn’s, especially in environments with limited internet access.
+   - Yarn’s offline capabilities significantly improve CI/CD pipeline performance by reducing the need for internet access.
+
 
 
