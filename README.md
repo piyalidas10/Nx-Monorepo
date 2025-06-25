@@ -42,6 +42,8 @@ NX   Let's create a new workspace [https://nx.dev/getting-started/intro]
 ✔ Which CI provider would you like to use? · github
 ```
 
+Now install Nx Console plugin in VSCode.
+
 ![Setup 1](https://github.com/piyalidas10/Nx-Monorepo/blob/bbb3423ddbd1adaeae2ecddcf5a467805e734223/basic_examples/images/Nx_Monorepo_Setup_1.png)
 ![Setup 2](https://github.com/piyalidas10/Nx-Monorepo/blob/bbb3423ddbd1adaeae2ecddcf5a467805e734223/basic_examples/images/Nx_Monorepo_Setup_2.png)
 
