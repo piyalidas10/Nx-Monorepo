@@ -46,6 +46,18 @@ NX   Let's create a new workspace [https://nx.dev/getting-started/intro]
    │  ├─ cache
    │  │  ├─ ci.yml
    │  │  ├─ cloud
+   │  │  |  ├─ verify.lock
+   │  │  |  ├─ 2506.22.2
+   │  │  |  |  ├─ lib
+   │  │  |  |  |  ├─ daemon
+   │  │  |  |  |  |  ├─ process-run-end.js
+   │  │  |  |  |  ├─ heartbeat
+   │  │  |  |  |  |  ├─ heartbeat-process.js
+   │  │  |  |  ├─ static
+   │  │  |  |  |  ├─ login-end.html
+   │  │  |  |  |  ├─ login-start.html
+   │  │  |  |  ├─ index.js
+   │  │  |  |  ├─ package.json
    │  ├─ workspace-data
    │  │  ├─ eslint-2654242865465226088.hash
    │  │  ├─ file-map.json
